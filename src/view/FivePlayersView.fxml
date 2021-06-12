@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="mainPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FivePlayersController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Arc fx:id="arc5" fill="TRANSPARENT" layoutX="198.0" layoutY="257.0" length="72.0" radiusX="150.0" radiusY="150.0" startAngle="90.0" stroke="#00000045" strokeType="INSIDE" strokeWidth="3.0" />
+            <Arc fx:id="arc1" fill="TRANSPARENT" layoutX="198.0" layoutY="257.0" length="72.0" radiusX="150.0" radiusY="150.0" startAngle="18.0" stroke="#00000045" strokeType="INSIDE" strokeWidth="3.0" />
+            <Arc fx:id="arc4" fill="TRANSPARENT" layoutX="198.0" layoutY="257.0" length="72.0" radiusX="150.0" radiusY="150.0" startAngle="162.0" stroke="#00000045" strokeType="INSIDE" strokeWidth="3.0" />
+            <Arc fx:id="arc3" fill="TRANSPARENT" layoutX="197.0" layoutY="257.0" length="72.0" radiusX="150.0" radiusY="150.0" startAngle="234.0" stroke="#00000045" strokeType="INSIDE" strokeWidth="3.0" />
+            <Arc fx:id="arc2" fill="TRANSPARENT" layoutX="197.0" layoutY="256.0" length="72.0" radiusX="150.0" radiusY="150.0" startAngle="306.0" stroke="#00000045" strokeType="INSIDE" strokeWidth="3.0" />
+            <Line fx:id="line1" endX="42.25" endY="136.00003051757812" layoutX="243.0" layoutY="242.0" startX="-44.75" startY="-136.0" stroke="#00000045" strokeWidth="3.0" />
+            <Line fx:id="line2" endX="-113.4000244140625" endY="-0.800018310546875" layoutX="227.0" layoutY="376.0" startX="-29.0" startY="-269.0" stroke="#00000045" strokeWidth="3.0" />
+            <Line fx:id="line3" endX="87.79998779296875" endY="-40.79998779296875" layoutX="253.0" layoutY="252.0" startX="-195.39999389648438" startY="-40.79998779296875" stroke="#00000045" strokeWidth="3.0" />
+            <Line fx:id="line4" endX="-137.79998779296875" endY="124.00003051757812" layoutX="253.0" layoutY="252.0" startX="86.20001220703125" startY="-39.199981689453125" stroke="#00000045" strokeWidth="3.0" />
+            <Line fx:id="line5" endX="32.25" endY="126.00003051757812" layoutX="253.0" layoutY="252.0" startX="-196.20001220703125" startY="-38.399993896484375" stroke="#00000045" strokeWidth="3.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/复读机mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="286.0" layoutY="135.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/老油条mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="229.0" layoutY="303.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/小可爱mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/黑帮老铁mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/福尔摩斯mini.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chosePane" layoutX="400.0" layoutY="1.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <VBox layoutX="150.0" layoutY="134.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <Button fx:id="butn1" mnemonicParsing="false" prefWidth="100.0" text="复读机">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/hat/复读机hat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="butn2" mnemonicParsing="false" prefWidth="100.0" text="老油条">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/hat/老油条hat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="butn3" mnemonicParsing="false" prefWidth="100.0" text="小可爱">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/hat/小可爱hat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="butn4" mnemonicParsing="false" prefWidth="100.0" text="黑帮老铁">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/hat/黑帮老铁hat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="butn5" mnemonicParsing="false" prefWidth="100.0" text="福尔摩斯">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/hat/福尔摩斯hat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="97.0" layoutY="38.0" text="是时候上赛场辣！各个角色会两两配对，" />
+            <Label layoutX="110.0" layoutY="58.0" text="进行十局比赛，每局比赛分为十轮" />
+            <Label layoutX="74.0" layoutY="94.0" text="你觉得哪个角色的总分最高呢？做出你的选择！" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

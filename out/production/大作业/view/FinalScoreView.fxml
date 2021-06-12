@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinalScoreController">
+   <children>
+      <Label layoutX="376.0" layoutY="79.0" text="所以，你刚刚对战的这些奇怪的角色是谁呢？" />
+      <TextArea editable="false" layoutX="216.0" layoutY="126.0" prefHeight="43.0" prefWidth="402.0" text="复读机：哈喽！我第一次会出「合作」，但是之后我永远会做出和你&#10;上一局一样的选择哦">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TextArea>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="129.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/复读机mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="446.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/小可爱mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="129.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/老油条mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="129.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/黑帮老铁mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="129.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/福尔摩斯mini.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="216.0" layoutY="197.0" prefHeight="43.0" prefWidth="153.0" text="老油条：永不「合作」，&#10;这是弱肉强食的世界" />
+      <TextArea editable="false" layoutX="531.0" layoutY="197.0" prefHeight="43.0" prefWidth="154.0" text="小可爱：永远「合作」，&#10;我们大家做朋友吧！" />
+      <TextArea editable="false" layoutX="216.0" layoutY="261.0" prefHeight="57.0" prefWidth="434.0" text="黑帮老铁：你小子给我听好，我会先给你面子，跟你「合作」，如果你听话，&#10;那咱们的生意就继续做下去。但是如果你敢「欺骗」我，hehe，死到临头我&#10;也不会合作！" />
+      <TextArea editable="false" layoutX="216.0" layoutY="340.0" prefHeight="85.0" prefWidth="434.0" text="福尔摩斯: 分析人是我的特长！游戏开始时我会「合作」，「欺骗」，&#10;「合作」，「合作」。如果你在前四局欺骗过我，我就会像「复读机」&#10;那样跟着你出牌，如果你一直不欺骗我，那我就会像「老油条」那样&#10;压榨你。这都是行走江湖的套路啊，我亲爱的花生儿~&#10;" />
+      <Label layoutX="59.0" layoutY="14.0" text="你的最终得分是..." />
+      <Label fx:id="finalScore" layoutX="71.0" layoutY="52.0" text="7">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="79.0" text="（最高分和最低分分别是：49分与7分)" />
+      <Label layoutX="152.0" layoutY="450.0" text="那么，让这些角色用自己的规则相互展开博弈...." />
+      <Button fx:id="next" layoutX="488.0" layoutY="446.0" mnemonicParsing="false" text="会发生什么呢？" />
+   </children>
+</AnchorPane>

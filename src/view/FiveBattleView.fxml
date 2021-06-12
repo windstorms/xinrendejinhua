@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tenRoundsPane" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FiveBattleController">
+   <children>
+      <ImageView fx:id="round1v" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round2v" fitHeight="50.0" fitWidth="50.0" layoutX="125.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round3v" fitHeight="50.0" fitWidth="50.0" layoutX="175.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round4v" fitHeight="50.0" fitWidth="50.0" layoutX="225.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round5v" fitHeight="50.0" fitWidth="50.0" layoutX="275.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round6v" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round7v" fitHeight="50.0" fitWidth="50.0" layoutX="125.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round8v" fitHeight="50.0" fitWidth="50.0" layoutX="175.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round9v" fitHeight="50.0" fitWidth="50.0" layoutX="225.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="round10v" fitHeight="50.0" fitWidth="50.0" layoutX="275.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="tipArea" layoutX="67.0" layoutY="253.0" opacity="0.0" prefHeight="131.0" prefWidth="280.0" />
+      <Button fx:id="roundControll" layoutX="174.0" layoutY="355.0" mnemonicParsing="false" text="第一局" />
+      <Label fx:id="everyRoundLabel" layoutX="78.0" layoutY="63.0" opacity="0.0" text="每局战况：" />
+      <TextArea fx:id="transitionArea" editable="false" layoutX="92.0" layoutY="188.0" prefHeight="108.0" prefWidth="230.0" text="火车不是吹的，牛不是推的，是骡子是&#10;马牵出来遛遛！咱们一个一个来，先看&#10;看第一局战况如何...." />
+      <TextArea fx:id="endTip" layoutX="27.0" layoutY="56.0" opacity="0.0" prefHeight="269.0" prefWidth="346.0" text="复读机！怎么样，你猜对了嘛？&#10;&#10;复读机有很多别名，像什么黄金准则啦，互惠利他主义啦，&#10;以牙还牙啦，或者说互惠宽容。这就是为什么「和平」会像&#10;雨后春笋一般在一战的战壕中蔓延开来：当你被迫每天与同&#10;一批人——不仅仅是普遍意义上的「敌人」——进行同样的&#10;游戏（例如战争）时，复读机这样的人不单单会赢得一场战&#10;役，他们会赢得整场战争。&#10;&#10;但是，如果同样的游戏每玩一场，情况都改变一次，设想一下&#10;假如我们进行多场这样的大赛..." />
+      <Label fx:id="totalScore" layoutX="91.0" layoutY="197.0" prefHeight="15.0" />
+      <Button fx:id="whatHappen" disable="true" layoutX="157.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="会发生什么呢？" />
+   </children>
+</AnchorPane>

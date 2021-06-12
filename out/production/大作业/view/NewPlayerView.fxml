@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoryModeController">
+   <children>
+      <TextArea editable="false" layoutX="202.0" layoutY="101.0" prefHeight="68.0" prefWidth="414.0" text="复读鸭：&#10;雷猴啊！我跟「复读机」几乎一样，只不过我会在你连续欺骗我两次的时候&#10;选择反击，毕竟人都是会犯错的嘛！嘿嘿嘿">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TextArea>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/复读鸭mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/一根筋mini.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mini/胡乱来mini.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="202.0" layoutY="214.0" prefHeight="57.0" prefWidth="434.0" text="一根筋：我会先合作，如果你合作，我就会做出和上一轮一样的选择，即使&#10;上一轮我犯了错也一样，如果你欺骗了我，我就会做出跟上一轮相反的选择，&#10;犯了错也一样" />
+      <TextArea editable="false" layoutX="202.0" layoutY="322.0" prefHeight="84.0" prefWidth="434.0" text="胡乱来：两只黄鹂鸣翠柳，岂因祸福避趋之，欸嘿嘿，我这个人说话从来不&#10;过脑子！&#10;（无论对手如何行动，我选择「合作」和「欺骗」的概率都是50%）&#10;&#10;" />
+      <Label layoutX="148.0" layoutY="48.0" text="来，认识一下这些新面孔！（或者说新帽子....）" />
+      <Label layoutX="165.0" layoutY="440.0" text="好啦，还记得之前的大赛形式吗？如果我们把新角色加进去..." />
+      <Button layoutX="536.0" layoutY="436.0" mnemonicParsing="false" text="会发生什么呢？" />
+   </children>
+</AnchorPane>

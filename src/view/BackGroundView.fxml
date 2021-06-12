@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BackGroundController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/begin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="248.0" layoutY="126.0" text="那是1914年”西方战线“的圣诞节" />
+      <Label layoutX="207.0" layoutY="148.0" text="尽管有着严格的军令不准与敌方士兵谈笑风生，" />
+      <Label layoutX="127.0" layoutY="171.0" text="英国和德国的军人们都离开了自己的战壕，穿过了无人地带，聚在了一起" />
+      <Label layoutX="193.0" layoutY="194.0" text="他们埋葬战友，交换礼物，有的还玩起了游戏。" />
+      <Label layoutX="148.0" layoutY="235.0" text="相比之下，现在已经是2021年，西方世界已经保持了几十年的和平。" />
+      <Label layoutX="27.0" layoutY="257.0" text="我们，欸？我们信任彼此的能力简直太差了。有社会调查表明，在过去的四十年中，越来越少的人说他们信任彼此。" />
+      <Label layoutX="246.0" layoutY="281.0" text="所以，我们难免会有这样的疑问：" />
+      <Label layoutX="186.0" layoutY="319.0" prefHeight="15.0" prefWidth="288.0" text="为什么朋友会变成敌人，即使在和平年代也不例外呢？">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="344.0" text="为什么敌人也会变成朋友，而且这种事情居然在战争年代也会发生？">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="letUsPlay" layoutX="274.0" layoutY="389.0" mnemonicParsing="false" text="我们先来玩个游戏吧" />
+   </children>
+</AnchorPane>

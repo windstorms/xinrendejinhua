@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IntroduceController">
+   <children>
+      <ImageView fitHeight="377.0" fitWidth="548.0" layoutX="148.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/介绍.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="intro" editable="false" layoutX="134.0" layoutY="25.0" prefHeight="86.0" prefWidth="530.0" text="                                                               信任游戏&#10;          你面前有一台机器：当你放进去一枚硬币，对方会得到三枚硬币，反之亦然。&#10;                  如果你们两个都放进一枚硬币，双方都会得到两枚硬币。&#10;          你们两个人都可以选择「合作」，放一枚硬币，或者选择「欺骗」，不放硬币。&#10;" />
+      <TextArea fx:id="bottom1" editable="false" layoutX="134.0" layoutY="364.0" prefHeight="54.0" prefWidth="530.0" text="       好，如果我现在告诉你，另一位玩家将选择「欺骗」，不会丢硬币进去，你该怎么做呢？&#10;&#10;" />
+      <TextArea fx:id="trust1" editable="false" layoutX="134.0" layoutY="25.0" prefHeight="86.0" prefWidth="530.0" text="                       哎呀，把左脸伸过去也只会多挨一下打，并没有好处呀！&#10;      如果你合作，但是对方欺骗，你将失去一个硬币，但对方可以得到三个硬币（-1：+3）。&#10;       但是，如果你们两个都选择欺骗，那两个人既得不到什么，也不会失去什么（0：0）。&#10;                                                 所以：你应该选择「欺骗」。" visible="false" />
+      <TextArea fx:id="dupe1" editable="false" layoutX="134.0" layoutY="25.0" prefHeight="86.0" prefWidth="530.0" text="                                       就是这样！凭什么要便宜这群伸手党啊？&#10;      如果你合作，但是对方欺骗，你将失去一个硬币，但对方可以得到三个硬币（-1：+3）。&#10;       但是，如果你们两个都选择欺骗，那两个人既得不到什么，也不会失去什么（0：0）。&#10;                                                 所以：你应该选择「欺骗」。" visible="false" />
+      <TextArea fx:id="bottom2" editable="false" layoutX="134.0" layoutY="364.0" prefHeight="54.0" prefWidth="530.0" text="                      但是，如果我告诉你，另一位玩家将选择「合作」，也就是投一枚硬币。&#10;                                                    你现在又该怎么做呢？" visible="false" />
+      <TextArea fx:id="trust2" editable="false" layoutX="134.0" layoutY="25.0" prefHeight="86.0" prefWidth="530.0" text="                       没错，看起来确实应该这样的哈...但是，仔细想想，真的是吗？&#10;         因为如果你们两个都选择了合作，你们都失去了一个硬币得到了两个（+2：+2）。&#10;    但是如果你选择了欺骗，但是对方却合作，你将得到三个硬币，对方会失去一个（+3：-1）。&#10;                                    所以，你还是应该选择欺骗，和上一轮一样。&#10;" visible="false" />
+      <TextArea fx:id="dupe2" editable="false" layoutX="134.0" layoutY="25.0" prefHeight="86.0" prefWidth="530.0" text="                                   哇哦...有点冷酷哦不过，这就是正确答案！&#10;         因为如果你们两个都选择了合作，你们都失去了一个硬币得到了两个（+2：+2）。&#10;    但是如果你选择了欺骗，但是对方却合作，你将得到三个硬币，对方会失去一个（+3：-1）。&#10;                                    所以，你还是应该选择欺骗，和上一轮一样。" visible="false" />
+      <TextArea fx:id="bottom3" editable="false" layoutX="103.0" layoutY="364.0" prefHeight="69.0" prefWidth="594.0" text="                             你看，两种情况我们都需要选择「欺骗」，这就是我们的窘境了。&#10;信任固然好，但会让别人占你的便宜，从战壕里攻击手无寸铁的你。有时候选择「欺骗」恰恰是理性的！&#10;                    然而，如果这个游戏不是一次就结束，而是玩很多次，你的每个对手都有自己的策略....&#10;" visible="false" />
+      <Button fx:id="trustButton" layoutX="269.0" layoutY="436.0" mnemonicParsing="false" text="合作">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="dupeButton" layoutX="466.0" layoutY="436.0" mnemonicParsing="false" text="欺骗">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="willDiff" layoutX="331.0" layoutY="439.0" mnemonicParsing="false" text="答案会有所不同吗？" visible="false" />
+   </children>
+</AnchorPane>

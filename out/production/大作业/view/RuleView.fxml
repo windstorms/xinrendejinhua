@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransistController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="104.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/rule1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="441.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/rule2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="104.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/rule3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="132.0" layoutY="35.0" text="来，现在我们让玩家人口的组成随时间进化，把这个进化过程分成「进化三部曲」：" />
+      <Label layoutX="222.0" layoutY="200.0" text="1.玩游戏">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="200.0" text="2.淘汰玩家">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="398.0" text="3.繁殖赢家">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="132.0" layoutY="228.0" text="每个玩家之间进行比赛，然后记录分数" />
+      <Label layoutX="550.0" layoutY="228.0" text="淘汰五个最低分玩家" />
+      <Label layoutX="526.0" layoutY="250.0" text="（如果分数一样就随机取五个）" />
+      <Label layoutX="180.0" layoutY="428.0" text="把分数最高的玩家克隆五个" />
+      <Label layoutX="192.0" layoutY="456.0" text="（如果并列就随机取）" />
+      <TextArea editable="false" layoutX="441.0" layoutY="306.0" prefHeight="58.0" prefWidth="306.0" text="...然后一直重复，直到你不想为止。注意：你不需要等&#10;到人们死亡和繁殖来进化文明——只需要「失败」的&#10;行为走向消亡，「成功」的行为得到模仿。好，现在..." />
+      <Button fx:id="nextPage" layoutX="555.0" layoutY="424.0" mnemonicParsing="false" text="...我们来试试吧" />
+   </children>
+</AnchorPane>

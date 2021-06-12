@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SandBoxLearnController">
+   <children>
+      <AnchorPane fx:id="tipPane" layoutX="400.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <TextArea fx:id="tip1" editable="false" layoutX="28.0" layoutY="50.0" prefHeight="200.0" prefWidth="346.0" text="我们开始先用这些玩家来进行比赛：十五个「小可爱」，五个&#10;「老油条」，还有五个「复读机」。（我们暂时先把「黑帮&#10;老铁」和「福尔摩斯」放一边）&#10;&#10;我们马上开始「比赛-淘汰-繁殖」三部曲，然后重复差不多&#10;几十场吧。好，现在我们再来猜猜谁会赢呢？想好再开始哦！" />
+            <Button fx:id="step1" layoutX="140.0" layoutY="292.0" mnemonicParsing="false" prefWidth="120.0" text="1）进行比赛" textAlignment="CENTER" />
+            <Button fx:id="step2" layoutX="140.0" layoutY="355.0" mnemonicParsing="false" prefWidth="120.0" text="2）除掉五个最低分" textAlignment="CENTER" />
+            <Button fx:id="step3" layoutX="140.0" layoutY="419.0" mnemonicParsing="false" prefWidth="120.0" text="3）繁殖五个最高分" textAlignment="CENTER" />
+            <TextArea fx:id="tip2" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="好，三部曲进行下去，&#10;然后看看你选的对不对" />
+            <TextArea fx:id="tip3" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="现在，「小可爱」们全部被吃掉了。&#10;不过，等等..." />
+            <TextArea fx:id="tip4" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="对啦：「老油条」作茧自缚，变成了受害者！他们剥削完天真&#10;无邪的「小可爱」之后，不得不独自面对「复读机」了。「&#10;复读机」们虽然人很好，但是他们并不傻。" />
+            <TextArea fx:id="tip5" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="仅仅重复别人动作的「复读机」可以与他人良好地相处，而&#10;自私的「老油条」只能欺骗他们自己！因此，老油条对阵「&#10;复读机」时，他们占不到多大的便宜，而「复读机」则会互相&#10;帮助，「老油条」只能自作自受啦。" />
+            <TextArea fx:id="tip6" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="...「复读机」继承了地球。&#10;&#10;所以，长期看来，「复读机」赢了！「老油条」在短期内确实&#10;可能获得胜利，但是我们最终看到，当他们残酷的剥削本质&#10;暴露无疑时，他们也不可避免地跌入了深渊。这让我想起了&#10;一句话：&#10;&#10;“我们并不因罪恶而受罚，而是罪恶本身会惩罚我们”&#10;——阿尔伯特 · 哈伯德" />
+            <TextArea fx:id="tip7" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="如果把「黑帮老铁」和「福尔摩斯」都放进来结果其实也差不&#10;多：&#10;&#10;（注意：有少数「黑帮老铁」可能会一直留下来，因为除了「&#10;黑帮老铁」和「复读机」之外的所有人都被淘汰了，他们两个&#10;会达成平局）&#10;&#10;所以，看起来博弈论的道理好像在告诉我们这样的事情：像「&#10;复读机」这样「己所不欲勿施于人」的人生哲学不仅是道德层&#10;面上的真理，同时也是科学上的真理。&#10;&#10;然而...." />
+            <Button fx:id="evolute" layoutX="151.0" layoutY="386.0" mnemonicParsing="false" opacity="0.0" text="开始进化流程！" />
+            <Button fx:id="anotherQuestion" layoutX="148.0" layoutY="322.0" mnemonicParsing="false" opacity="0.0" text="...还有一个问题..." />
+            <Button fx:id="ouch" disable="true" layoutX="165.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="哦，对了..." />
+            <Button fx:id="whatIsThat" disable="true" layoutX="163.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="是什么呢？" />
+            <TextArea fx:id="tip8" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="看看你周围，这世界上简直充满了无赖。&#10;&#10;如果在这个重复的信任游戏中，「复读机」使用的是这种甚至&#10;连一战战壕里的士兵都独立地「进化」出来了的被称为「互&#10;惠宽容」的强大策略，那么，为什么这个世界上有那么多不信&#10;任别人，以及不值得信任的人？是什么使得「不信任」这种病&#10;毒如此广泛地传播呢？&#10;&#10;有一个线索其实就藏在这句话本身——「在这个重复的信任&#10;游戏中」。到目前为止，我们都只在讨论玩家的变化，但是，&#10;如果我们讨论一下这个博弈论游戏本身的变化呢？有没有想过&#10;导致不信任的..." />
+            <Button fx:id="reset" disable="true" layoutX="181.0" layoutY="397.0" mnemonicParsing="false" opacity="0.0" text="重置" />
+            <Button fx:id="continueButton" disable="true" layoutX="181.0" layoutY="442.0" mnemonicParsing="false" opacity="0.0" text="继续" />
+            <TextArea fx:id="tip9" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="在一切变得糟糕之前，我们先看看好的一面！这是一个充满&#10;「小可爱」的世界，里面只有一个「复读机」和一个「老油条&#10;」。&#10;&#10;用左边面的按钮来开始快速模拟，或者一步一步地来&#10;&#10;你可以滑动下面的滑块来改变每一轮对局的次数，然后&#10;点击重置按钮重新开始，看看结果会不会产生变化" />
+            <TextArea fx:id="tip10" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="你看到了，如果不进行足够多轮的比赛，（这里是五轮或更少&#10;）「老油条」就会处于绝对的优势。&#10;&#10;1985年的调查显示，当美国人被问道他们有多少亲密朋友的&#10;时候，最常见的回答时「3个」。而在2014年，这个数字变成&#10;了「0」。刚刚你自己也发现了一个道理，人与人之间越来越&#10;少的「重复互动」所带来的影响就是不信任的扩散。&#10;&#10;（不不不，大众传媒不算时重复互动，必须是人与人之间进行&#10;的双向互动才行）" />
+            <Button fx:id="worseButton" disable="true" layoutX="106.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="而且，emm，情况可能会更糟糕" />
+            <TextArea fx:id="tip11" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="分蛋糕的方法不止一种，在正常收益的情况下，「复读机」胜&#10;利。但是现在如果把「双赢」的奖励从+2降到+1，然后开始&#10;演化。尽管+1还是比两人都欺骗的惩罚（也就是0）要好...&#10;&#10;这时会发生什么呢？" />
+            <ImageView fx:id="changeRule" fitHeight="177.0" fitWidth="200.0" layoutX="100.0" layoutY="259.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/widget/修改规则.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="continueButton2" disable="true" layoutX="180.0" layoutY="442.0" mnemonicParsing="false" opacity="0.0" text="继续" />
+            <TextArea fx:id="tip12" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="214.0" prefWidth="346.0" text="同样的事情发生了：当「双赢」的报酬被降低，「老油条」开&#10;始处于优势地位。对于这种现象，博弈论里有两个很适当的概&#10;念可以参考：&#10;&#10;「零和游戏」：指的是游戏双方都悲观地相信己方得到的东西&#10;必然来自于对方的失去，反之亦然。&#10;&#10;「非零和游戏」，指的是双方都努力创造出双赢的局面（或者&#10;至少防止双输的出现）！如果没有非零和游戏，人与人之间的&#10;信任就不可能得到传播。&#10;&#10;说到这儿，咱们来看一看第三个，也是最后一个阻止信任传播&#10;的壁垒..." />
+            <Button fx:id="mistakeButton" disable="true" layoutX="137.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="饭错（x）犯错（√）" />
+            <Slider fx:id="roundBar" blockIncrement="1.0" disable="true" layoutX="130.0" layoutY="327.0" max="50.0" min="1.0" opacity="0.0" showTickLabels="true" value="10.0" />
+            <Label fx:id="roundLabel" layoutX="152.0" layoutY="276.0" opacity="0.0" text="每轮进行10局比赛" />
+            <TextArea fx:id="tip13" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="现在场上有十几个「小可爱」，对阵我们的老冠军，公平的「&#10;复读机」，以及我们的三个新角色：宽容的「复读鸭」，迟钝&#10;的「一根筋」以及傻傻的「胡乱来」。&#10;&#10;每一轮比赛中，玩家们都有一个很小的概率犯错（假设是5%&#10;吧）。你觉得这次谁会笑到最后呢？仔细想想再开始哦" />
+            <Button fx:id="continueButton4" disable="true" layoutX="180.0" layoutY="385.0" mnemonicParsing="false" opacity="0.0" text="继续" />
+            <TextArea fx:id="tip14" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="「一根筋」取得了胜利！这是因为「一根筋」实际上具有剥削&#10;「小可爱」的能力。他们都以「合作」开局，但是一旦「一根&#10;筋」犯了错，欺骗了对方，就会一直欺骗下去，这是因为只要&#10;不犯错，「小可爱」永远不会反击" />
+            <TextArea fx:id="tip15" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="...把占人数一半的「小可爱」用「老油条」替换掉，其他的都&#10;不变。这是一个一点也不宽容，充满了恶意的环境。&#10;&#10;现在你觉得谁会赢呢？" />
+            <TextArea fx:id="tip16" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="200.0" prefWidth="346.0" text="「复读鸭」赢啦！而且令人意想不到的是：即使在初始环境如&#10;此恶劣的情况下，「复读鸭」这个更宽容版本的「复读机」，&#10;居然最后被证明是最成功的！（注意：「复读鸭」十分宽容）&#10;以至于它有时候并没有完全淘汰「复读机」，他们可以和睦相&#10;处）&#10;&#10;在这种情况下，一点点的「误解」可以带来更多的宽容。但是&#10;如果「误解」发生的概率产生变化的话，结果会怎么样呢？&#10;&#10;" />
+            <Button fx:id="turnToSand" disable="true" layoutX="158.0" layoutY="386.0" mnemonicParsing="false" opacity="0.0" text="...沙盒模式！" />
+            <Button fx:id="haveATry" disable="true" layoutX="147.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="现在我们来试着..." />
+            <TextArea fx:id="tip17" editable="false" layoutX="28.0" layoutY="50.0" opacity="0.0" prefHeight="238.0" prefWidth="346.0" text="结果大概是这样的：&#10;在0%的时候，公平的「复读机」获胜！在1%到9%之间，宽&#10;容的「复读鸭」获胜！在10%到49%之间：不公平也不宽容的&#10;「老油条」获胜。到了50%，没有人会一直赢。（误解的概率&#10;最高就是50%啦，因为这个时候，每一次选择都是在抛硬币）&#10;&#10;这就是为什么我们说「误解」是达成信任的一个有趣的壁垒：&#10;一个小误解可以带来更多宽容，但是太多误解带来的却是大范&#10;围的不信任！我个人认为，现代科技进步使得媒介越来越发达&#10;虽然一定程度上帮助人们增加了交流机会，但它给人们带来的&#10;误解其实更多。&#10;&#10;&#10;终于，咱们一起来试试所有的数字组合吧。&#10;欢迎来到..." />
+            <Button fx:id="willSame" disable="true" layoutX="156.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="还会一样吗？" />
+            <Button fx:id="continueButton5" disable="true" layoutX="174.0" layoutY="355.0" mnemonicParsing="false" opacity="0.0" text="继续" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mistakePane" disable="true" opacity="0.0" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="500.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+            <ImageView fitHeight="301.0" fitWidth="394.0" layoutX="26.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/widget/失误1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="277.0" fitWidth="394.0" layoutX="420.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/widget/失误2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="293.0" fitWidth="378.0" layoutX="26.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/widget/失误3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="16.0" text="我们让两个复读机进行游戏：作为两个礼尚往来的绅士，" />
+            <Label layoutX="125.0" layoutY="38.0" text="他们两个第一轮都会选择「合作」" />
+            <Label layoutX="134.0" layoutY="62.0" text="哎呀..左边的玩家出了点小意外" />
+            <Label layoutX="73.0" layoutY="221.0" text="人会犯错误，信息会被误传与曲解，真相又常常解释不清" />
+            <Label layoutX="88.0" layoutY="242.0" text="——现实生活中就是会发生各种各样的事故" />
+            <Label layoutX="468.0" layoutY="31.0" text="由于对方是一个「复读机」，他除了反击别无选择..." />
+            <Label layoutX="163.0" layoutY="438.0" text="这样周而复始..." />
+            <TextArea editable="false" layoutX="431.0" layoutY="290.0" prefHeight="136.0" prefWidth="346.0" text="因为一次小小的失误，两个「复读机」之间的良好关系瓦解&#10;了，他们陷入了互相猜忌，互相欺骗的恶性循环中...&#10;&#10;很遗憾对吧？现实生活中两个人关系的恶化往往也是从一件&#10;不起眼的小事开始的...&#10;&#10;那么有没有什么办法呢?&#10;" />
+            <Button fx:id="continueButton3" layoutX="585.0" layoutY="450.0" mnemonicParsing="false" text="继续" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="newPlayer" disable="true" layoutX="5.0" layoutY="5.0" opacity="0.0" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <TextArea editable="false" layoutX="202.0" layoutY="101.0" prefHeight="68.0" prefWidth="414.0" text="复读鸭：&#10;雷猴啊！我跟「复读机」几乎一样，只不过我会在你连续欺骗我两次的时候&#10;选择反击，毕竟人都是会犯错的嘛！嘿嘿嘿">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </TextArea>
+            <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/复读鸭mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/一根筋mini.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="115.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mini/胡乱来mini.png" />
+               </image>
+            </ImageView>
+            <TextArea editable="false" layoutX="202.0" layoutY="214.0" prefHeight="57.0" prefWidth="434.0" text="一根筋：我会先合作，如果你合作，我就会做出和上一轮一样的选择，即使&#10;上一轮我犯了错也一样，如果你欺骗了我，我就会做出跟上一轮相反的选择，&#10;犯了错也一样" />
+            <TextArea editable="false" layoutX="202.0" layoutY="322.0" prefHeight="84.0" prefWidth="434.0" text="胡乱来：两只黄鹂鸣翠柳，岂因祸福避趋之，欸嘿嘿，我这个人说话从来不&#10;过脑子！&#10;（无论对手如何行动，我选择「合作」和「欺骗」的概率都是50%）&#10;&#10;" />
+            <Label layoutX="148.0" layoutY="48.0" text="来，认识一下这些新面孔！（或者说新帽子....）" />
+            <Label layoutX="165.0" layoutY="440.0" text="好啦，还记得之前的大赛形式吗？如果我们把新角色加进去..." />
+            <Button fx:id="whatHappen" layoutX="536.0" layoutY="436.0" mnemonicParsing="false" text="会发生什么呢？" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="winnerView" disable="true" fitHeight="400.0" fitWidth="400.0" layoutX="72.0" layoutY="50.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/widget/winner.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

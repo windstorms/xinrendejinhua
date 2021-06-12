@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="an" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoryModeController">
+   <children>
+      <ImageView fx:id="rightCoin" fitHeight="30.0" fitWidth="30.0" layoutX="558.0" layoutY="248.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftCoin" fitHeight="30.0" fitWidth="30.0" layoutX="193.0" layoutY="251.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftCover" fitHeight="30.0" fitWidth="30.0" layoutX="193.0" layoutY="251.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/空.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightCover" fitHeight="30.0" fitWidth="30.0" layoutX="558.0" layoutY="248.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/空.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightReward" fitHeight="30.0" fitWidth="30.0" layoutX="475.0" layoutY="293.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftReward" fitHeight="30.0" fitWidth="30.0" layoutX="277.0" layoutY="293.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightEmoji" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="191.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/emoji/正常.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftEmoji" fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/emoji/正常.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="133.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/槽.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftPlayerView" fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/normal/玩家.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightPlayerView" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="191.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/normal/复读机.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soloPlace" fitHeight="400.0" fitWidth="600.0" layoutX="133.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/widget/machine.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="leftScoreLabel" layoutX="347.0" layoutY="123.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="rightScoreLabel" layoutX="427.0" layoutY="121.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="backLabel" layoutX="704.0" layoutY="22.0">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/widget/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button fx:id="cooperationButton" layoutX="451.0" layoutY="391.0" mnemonicParsing="false" text="合作">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="dupeButton" layoutX="283.0" layoutY="391.0" mnemonicParsing="false" text="欺骗">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="opponent" layoutX="366.0" layoutY="37.0" text="第1/5个对手" />
+      <Label fx:id="totalScore" layoutX="366.0" layoutY="67.0" text="你的总分：0" />
+   </children>
+</AnchorPane>
